@@ -1,0 +1,84 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; background-color: #eee;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Text Align */
+.text-align {
+	&-left {
+		text-align: left;
+	}
+	&-right {
+		text-align: right;
+	}
+	&-center {
+		text-align: center;
+	}
+}
+
+/* Grid */
+.grid {
+  grid-template-columns: repeat(12, 1fr);
+  display: grid;
+  grid-gap: 5px;
+}
+.colspan-2 {
+  grid-column: span 2;
+}
+.colspan-3 {
+  grid-column: span 3;
+}
+.colspan-4 {
+  grid-column: span 4;
+}
+.colspan-5 {
+  grid-column: span 5;
+}
+.colspan-6 {
+  grid-column: span 6;
+}
+.colspan-7 {
+  grid-column: span 7;
+}
+.colspan-8 {
+  grid-column: span 8;
+}
+.colspan-9 {
+  grid-column: span 9;
+}
+.colspan-10 {
+  grid-column: span 10;
+}
+.colspan-11 {
+  grid-column: span 11;
+}
+.colspan-12 {
+  grid-column: span 12;
+}
+
+/* Preloader */
+.loader {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 40px 0;
+}
+
+/* Error message */
+.error-message {
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffc5c5;
+  border: 2px solid red;
+} 
+
+/* User select */
+.user-select {
+  &-none {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}

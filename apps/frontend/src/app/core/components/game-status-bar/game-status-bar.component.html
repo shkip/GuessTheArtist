@@ -1,0 +1,10 @@
+<section class="status-bar grid">
+  <div class="colspan-6">
+    <ng-container *ngIf="roundSubject | async as round">
+      ⚡ Round: <b>{{ round }}</b>
+    </ng-container>
+  </div>
+  <div class="colspan-6 text-align-right">
+    🪙 Score: <b>{{ scoreSubject | async }}</b>
+  </div>
+</section>

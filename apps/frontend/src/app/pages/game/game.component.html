@@ -1,0 +1,31 @@
+<section class="game">
+  <div class="loader" *ngIf="isLoading; else contentTemplate">
+    <mat-spinner></mat-spinner>
+  </div>
+  <ng-template #contentTemplate>
+    <ng-container *ngIf="roundSubject | async as round">
+      <ng-container *ngIf="albums[round - 1] as album">
+        <h2>🎶 Album:</h2>
+        <div class="album">
+          <div class="image">
+            <img [src]="album.img" alt="" />
+          </div>
+          <div class="title">
+            {{ album.title }}
+          </div>
+        </div>
+        <h2>🎤 Select artist:</h2>
+        <div class="grid">
+          <ng-container *ngFor="let artist of artists">
+            <div
+              class="artist colspan-3 text-align-center user-select-none"
+              (click)="!isGameOver && checkRound(album, artist)"
+            >
+              {{ artist }}
+            </div>
+          </ng-container>
+        </div>
+      </ng-container>
+    </ng-container>
+  </ng-template>
+</section>

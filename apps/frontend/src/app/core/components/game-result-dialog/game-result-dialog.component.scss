@@ -1,0 +1,44 @@
+.mat-mdc-dialog-content {
+	width: 400px;
+	padding: 0;
+}
+
+.mat-mdc-dialog-actions {
+	justify-content: center;
+}
+
+.mdc-dialog__content>:last-child {
+	margin-bottom: 20px;
+}
+
+.mat-mdc-form-field {
+	width: 100%;
+}
+
+.form-wrapper {
+	padding: 0 20px;
+}
+
+.score {
+	color: black;
+	margin: 40px 0;
+}
+
+.player {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 40px;
+}
+
+@media (max-width: 540px) {
+	.mat-mdc-dialog-content {
+		width: 300px;
+	}
+}
+
+@media (max-width: 400px) {
+	.mat-mdc-dialog-content {
+		width: auto;
+	}
+}

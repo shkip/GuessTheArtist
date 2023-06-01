@@ -1,0 +1,10 @@
+FROM keymetrics/pm2:16-jessie
+
+WORKDIR /app
+COPY package*.json ./
+RUN npm install --production
+COPY ./dist/apps/backend ./
+COPY ./apps/backend/ecosystem.config.js ./
+EXPOSE 3000
+RUN ls
+CMD ["pm2-runtime", "start", "ecosystem.config.js", "--env", "production"]

@@ -1,0 +1,22 @@
+.album {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 40px;
+	.image {
+		margin: 0 20px 0 0;
+		padding: 0;
+	}
+	.title {
+		font-size: 20px;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifs;
+	}
+}
+
+.artist {
+	border: 1px solid #eee;
+	cursor: pointer;
+	&:hover {
+		border: 1px solid #ccc;
+	}
+}
